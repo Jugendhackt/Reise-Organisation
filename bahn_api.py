@@ -78,6 +78,7 @@ def anfrage(zuhause, urlaub, fahrt):
             schnellste = verbindung
     return schnellste
 
-fahrplan = von_nach()
-with open('fahrplan.json', 'w') as fplan:
-    json.dump(fahrplan, fplan)
+def anJson():
+    fahrplan = von_nach()
+    fahrplan = json.dumps(fahrplan)
+    return fahrplan

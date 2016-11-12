@@ -20,7 +20,6 @@ def wettervorhersage():
             ergebnis["temp"] = int(wvhsage["main"]["temp"]) - 273.15
             ergebnis["stadt"] = stadt
 
-    with open('wetter.json', 'w') as wetterjson:
-        json.dump(ergebnis, wetterjson)
+    ergebnis = json.dumps(ergebnis)
+    return ergebnis
 
-wettervorhersage()
