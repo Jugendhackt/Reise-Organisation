@@ -11,8 +11,8 @@ def hello_world():
 def zug():
     return bahn_api.anJson()
 
-@app.route('/zug/<stadt1>/<stadt2>')
-def zug(stadt1, stadt2):
+@app.route('/zug2/<stadt1>/<stadt2>')
+def zug2(stadt1, stadt2):
     return bahn_api.anJson()
 
 @app.route('/wetter')
