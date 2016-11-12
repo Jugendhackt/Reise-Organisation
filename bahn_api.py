@@ -77,8 +77,6 @@ def anfrage(zuhause, urlaub, fahrt):
     return schnellste
 
 def anJson(zuhause, urlaub):
-    zuhause = input("wo wohnst du?")
-    urlaub = input("wohin wilst du?")
     fahrplan = von_nach(zuhause, urlaub)
     fahrplan = json.dumps(fahrplan)
     return fahrplan
