@@ -1,0 +1,37 @@
+body{
+	background-color: lightblue;
+	font-family: "Arial";
+	color: black;
+	font-size: 18px;
+}
+
+h1{
+	color: red;
+    text-align: center;
+	font-family: "Arial";
+    font-size: 60px;
+	font-weight: bold 
+}
+
+h2{
+	color: black;
+    text-align: left;
+	font-family: "Arial";
+    font-size: 30px;
+	font-style:italic;
+}
+
+h3{
+	color: black;
+    text-align: center;
+	font-family: "Arial";
+    font-size: 40px;
+	text-decoration: underline;
+}
+
+h4{
+	color: black;
+    text-align: center;
+	font-family: "Arial";
+    font-size: 22px;
+	text-decoration: underline;
