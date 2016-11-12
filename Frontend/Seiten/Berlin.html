@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Berlin
+</title>
+<script language="JavaScript">
+<!--
+function los(formular)
+{
+  if((formular.value.length < 1)||(formular.value.length < 1))
+   {
+    alert("Ausfuellen!")
+    return false
+   }
+   return true
+}
+//-->
+</script>
+</head>
+<body>
+<h3>Unterkunft</h3>
+<form onSubmit="return los(this)">
+  <input type="radio" name="unterkunft" value="male">Herberge<br>
+  <input type="radio" name="unterkunft" value="female">Hotel<br>
+  <input type="radio" name="unterkunft" value="other">Ferienwohnung<br>
+  <h3>Reiseverbindung</h3>
+  <input type="text" name="startbahnhof">
+  <input type="submit" name="submitbutton">
+</form>
+</body>
+</html>
