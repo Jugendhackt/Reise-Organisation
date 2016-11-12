@@ -6,10 +6,10 @@ import datetime
 key = "1c362da74ba5df2969451af029bffbe5"
 basis = "http://api.openweathermap.org/data/2.5/forecast?"
 land = "XA-DE"
-stadt = "Mannheim"
 datum = "2016-11-15 15:00:00"
 
-def wettervorhersage():
+def wettervorhersage(ort):
+    stadt = ort
     ergebnis = {}
     wedaten = basis + "q=" +land + "," + stadt + "&mode=json" + "&APPID=" + key
     r = requests.get(wedaten)
