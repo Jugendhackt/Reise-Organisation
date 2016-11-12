@@ -17,10 +17,8 @@ def bahnhofsInfo():
         bahnhoefe.append(bahnhof["name"])
     return bahnhoefe
 
-def von_nach():
+def von_nach(zuhause, urlaub):
     hinfahrt = "20.11.2016"
-    zuhause = "Karlsruhe"
-    urlaub = "Mannheim"
     rueckfahrt = "22.11.2016"
 
     hinverbindung = anfrage(zuhause, urlaub, hinfahrt)
@@ -78,7 +76,9 @@ def anfrage(zuhause, urlaub, fahrt):
             schnellste = verbindung
     return schnellste
 
-def anJson():
-    fahrplan = von_nach()
+def anJson(zuhause, urlaub):
+    zuhause = input("wo wohnst du?")
+    urlaub = input("wohin wilst du?")
+    fahrplan = von_nach(zuhause, urlaub)
     fahrplan = json.dumps(fahrplan)
     return fahrplan
