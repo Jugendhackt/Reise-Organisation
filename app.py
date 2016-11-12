@@ -13,7 +13,7 @@ def zug():
 
 @app.route('/zug2/<stadt1>/<stadt2>')
 def zug2(stadt1, stadt2):
-    return bahn_api.anJson()
+    return bahn_api.anJson(stadt1, stadt2)
 
 @app.route('/wetter')
 def wetter():
