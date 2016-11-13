@@ -5,6 +5,7 @@
   </title>
 </head>
 <body>
+
   <nav class="navbar navbar-fixed-top navbar-inverse">
      <div class="container">
        <div class="navbar-header">
@@ -27,15 +28,27 @@
    <br><br>
   <div class="container">
 
-    <form>
+    <form id="formular" onsubmit="displayVals();return false;">
       <h3>Unterkunft</h3>
       <select id="unterkunft">
         <option>Herberge</option>
         <option>Hotel</option>
         <option>Ferienwohnung</option>
       </select>
+      <h3>Ich gehe lieber...</h3>
+      <select id="kultur">
+        <option>in Clubs</option>
+        <option>in Museen</option>
+        <option>auf Konzerte</option>
+      </select>
+      <h3>Preisklasse</h3>
+      <select id="preisklasse">
+        <option>Budget</option>
+        <option>gehoben</option>
+      </select>
       <h3>Reiseverbindung</h3>
-      <input placeholder="Start" type="text" id="startbahnhof"><br><br>
+      <input placeholder="Start" type="text" id="startbahnhof"><br>
+      <input placeholder="Ziel" type="text" id="zielbahnhof"><br><br>
       <input type="submit" value="Update" name="submitbutton">
     </form>
     <div id="output"></div>
